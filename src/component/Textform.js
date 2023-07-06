@@ -21,14 +21,19 @@ export default function Textform(probs) {
         settext(newtext)
         console.log('clear text' + newtext)
     }
-    const handlecamel=()=>{
-        let arr=text.split(" ")
-        for( let i=0;i<arr.length;i++){
-            let d=arr.charAt[0].toLowerCase.slice(1)
-            console.log(d)
+    function handlecamel() {
+        const ab = []
+        let wordArr = text.split(" ");
+        for (let i in wordArr) {
+
+            ab.push(wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1))
+            console.log(typeof (b))
         }
-       
+        let d = ab.join(' ')
+        settext(d)
     }
+
+
 
 
     const [text, settext] = useState('')
@@ -48,7 +53,7 @@ export default function Textform(probs) {
             <button className='btn btn-primary my-3' onClick={handleupp}>Convert to UpperCase</button>
             <button className='btn btn-primary my-3 mx-3' onClick={handlelw}>Convert to LowerCase</button>
             <button className='btn btn-primary my-3' onClick={handleclear}>Clear Text</button>
-            <button className='btn btn-primary my-3 mx-3'onClick={handlecamel} >Convert to CamelCase</button>
+            <button className='btn btn-primary my-3 mx-3' onClick={handlecamel} >Convert to CamelCase</button>
             <div className="container">
                 <h1>The summary</h1>
                 <p><b>The no of word is {text.split(" ").length} and no of length is {text.length} </b> </p>
