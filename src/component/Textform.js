@@ -54,6 +54,8 @@ export default function Textform(probs) {
             <button className='btn btn-primary my-3 mx-3' onClick={handlelw}>Convert to LowerCase</button>
             <button className='btn btn-primary my-3' onClick={handleclear}>Clear Text</button>
             <button className='btn btn-primary my-3 mx-3' onClick={handlecamel} >Convert to CamelCase</button>
+            <button className='btn btn-primary my-3 mx-3'>copy</button>
+            
             
 
             <div className="container">
